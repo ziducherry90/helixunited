@@ -3523,7 +3523,6 @@
      ADMIN PANEL
 ═══════════════════════════════════  -->
     <div id="admin-panel">
-        <!-- Admin Login Screen -->
         <div id="admin-login"
             style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px">
             <div
@@ -3535,16 +3534,21 @@
                     <p style="color:var(--gray);font-size:14px;margin-top:6px">Helix United FC — Secure Access</p>
                 </div>
                 <div style="display:flex;flex-direction:column;gap:16px">
-                    <div class="input-group"><label class="input-label">Username</label><input class="input"
-                            id="admin-user" placeholder="admin" value="helixunited@gmail.com"></div>
-                    <div class="input-group"><label class="input-label">Password</label><input class="input"
-                            type="password" id="admin-pass" placeholder="helix2019@" value="helix2019@"
-                            onkeydown="if(event.key==='Enter')doAdminLogin()"></div>
+                    <div class="input-group">
+                        <label class="input-label">Username</label>
+                        <input class="input" id="admin-user" placeholder="Helixunited" value="Helixunited">
+                    </div>
+                    <div class="input-group">
+                        <label class="input-label">Password</label>
+                        <input class="input" type="password" id="admin-pass" placeholder="HU@2019" value="HU@2019"
+                            onkeydown="if(event.key==='Enter')doAdminLogin()">
+                    </div>
                     <button class="btn btn-primary w-full" onclick="doAdminLogin()">Login to Admin</button>
                     <button class="btn btn-ghost w-full" onclick="closeAdminPanel()">← Back to Website</button>
                 </div>
             </div>
         </div>
+    </div>
 
         <!-- Admin Dashboard (hidden until login) -->
         <div id="admin-dashboard" style="display:none">
